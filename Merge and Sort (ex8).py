@@ -1,8 +1,13 @@
 #Merge and Sort (ex8)
-list1 = ['10', '30', '20', '90', '11', '5', '6']
-list2 = ['1', '9', '2', '7', '3', '8', '4']
+import time
+list1 = ['3', '2', '4', '9']
+list2 = ['5', '8', '1', '0']
 
+list1.sort(key=max, reverse=True)
+list2.sort(key=min)
 listmerger = list1 + list2
 
 listmerger.sort(key=min)
-print (listmerger)
+print ("list 1 as follows:",  list1, "\nlist 2 as follows:", list2)
+time.sleep(1.0)
+print("Merged list is as follows:", listmerger)
