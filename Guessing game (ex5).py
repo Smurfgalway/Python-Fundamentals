@@ -15,6 +15,6 @@ while (count < 10):
         count += 1
         print("Guess ", count, " used")
     if int(guess) == int (secNum):
-        print ("you got it!")
+        print ("you got it on guess", count, "well done!!")
         break
     
